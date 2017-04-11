@@ -41,63 +41,65 @@
 <br><br>
 <table>
   <thead>
-    <tr>
-      <th>Nome</th>
-      <th>Quantidade</th>
-      <th>Descrição</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Impressora</strong></td>
-      <td>15</td>
-      <td>The speed of the show/reveal</td>
-    </tr>
-    <tr>
-      <td><strong>Teclado</strong></td>
-      <td>'linear'</td>
-      <td>The easing of the show/reveal</td>
-    </tr>
-    <tr>
-      <td><strong>Mouse</strong></td>
-      <td>50</td>
-      <td>The speed of the hide/conceal</td>
-    </tr>
-    <tr>
-      <td><strong>Monitor LCD</strong></td>
-      <td>'linear'</td>
-      <td>The easing of the hide/conceal</td>
-    </tr>         
-    <tr>
-      <td><strong>Monitor CRT</strong></td>
-      <td>'auto'</td>
-      <td>The width that the data will be truncated to - <em>('auto' or px amount)</em></td>
-    </tr>
-    <tr>
-      <td><strong>ellipsis</strong></td>
-      <td>true</td>
-      <td>Set to true to enable the ellipsis</td>
-    </tr>
-    <tr>
-      <td><strong>title</strong></td>
-      <td>false</td>
-      <td>Set to true to show the full data on hover</td>
-    </tr>
-    <tr>
-      <td><strong>afterShow</strong></td>
-      <td> $.noop</td>
-      <td>The callback fired after the show/reveal</td>
-    </tr>
-    <tr>
-      <td><strong>afterHide</strong></td>
-      <td>$.noop</td>
-      <td>The callback fired after the hide/conceal</td>
-    </tr>
-    <tr>
-      <td><strong>Sou foda</strong></td>
-      <td>$.noop</td>
-      <td>The callback fired after the hide/conceal</td>
-    </tr>
+    <?php
+    echo "<tr>"
+      echo "<th>Nome</th>";
+      echo "<th>Quantidade</th>";
+      echo "<th>Descrição</th>";
+    echo "</tr>";
+  echo "</thead>";
+  echo "<tbody>";
+    echo "<tr>";
+      echo "<td><strong>Impressora</strong></td>";
+      echo "<td>15</td>";
+      echo "<td>The speed of the show/reveal</td>";
+   echo " </tr>";
+    echo "<tr>";
+      echo "<td><strong>Teclado</strong></td>";
+      echo "<td>linear</td>";
+      echo "<td>The easing of the show/reveal</td>";
+   echo " </tr>";
+   echo " <tr>";
+      echo "<td><strong>Mouse</strong></td>";
+      echo "<td>50</td>";
+      echo "<td>The speed of the hide/conceal</td>";
+    echo "</tr>";
+    echo "<tr>";
+      echo "<td><strong>Monitor LCD</strong></td>";
+      echo "<td>linear</td>";
+      echo "<td>The easing of the hide/conceal</td>";
+    echo "</tr>";         
+    echo "<tr>";
+    echo "  <td><strong>Monitor CRT</strong></td>";
+      echo "<td>auto</td>";
+      echo "<td>The width that the data will be truncated to - <em>('auto' or px amount)</em></td>";
+    echo "</tr>";
+    echo "<tr>";
+      echo "<td><strong>ellipsis</strong></td>";
+      echo "<td>true</td>";
+      echo "<td>Set to true to enable the ellipsis</td>";
+    echo "</tr>";
+   echo " <tr>";
+    echo "  <td><strong>title</strong></td>";
+      echo "<td>false</td>";
+     echo " <td>Set to true to show the full data on hover</td>";
+    echo "</tr>";
+    echo "<tr>";
+      echo "<td><strong>afterShow</strong></td>";
+      echo "<td> $.noop</td>";
+      echo "<td>The callback fired after the show/reveal</td>";
+    echo "</tr>";
+    echo "<tr>";
+      echo "<td><strong>afterHide</strong></td>";
+      echo "<td>$.noop</td>";
+      echo "<td>The callback fired after the hide/conceal</td>";
+    echo "</tr>";
+    echo "<tr>";
+      echo "<td><strong>Sou foda</strong></td>";
+      echo "<td>$.noop</td>";
+      echo "<td>The callback fired after the hide/conceal</td>";
+    echo "</tr>";
+    ?>
   </tbody>
 </table>
   <div class="col-xs-6">
