@@ -11,6 +11,7 @@
  <link href="css/style.css" rel="stylesheet">
  <link rel="stylesheet" type="text/css" href="estilo_buscar.css">
  <link rel="stylesheet" type="text/css" href="estilo.css">
+
 </head>
 <body> 
  <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -38,7 +39,73 @@
 <hr>
 <div id="main" class="container-fluid">
 <br><br>
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Quantidade</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Impressora</strong></td>
+      <td>15</td>
+      <td>The speed of the show/reveal</td>
+    </tr>
+    <tr>
+      <td><strong>Teclado</strong></td>
+      <td>'linear'</td>
+      <td>The easing of the show/reveal</td>
+    </tr>
+    <tr>
+      <td><strong>Mouse</strong></td>
+      <td>50</td>
+      <td>The speed of the hide/conceal</td>
+    </tr>
+    <tr>
+      <td><strong>Monitor LCD</strong></td>
+      <td>'linear'</td>
+      <td>The easing of the hide/conceal</td>
+    </tr>         
+    <tr>
+      <td><strong>Monitor CRT</strong></td>
+      <td>'auto'</td>
+      <td>The width that the data will be truncated to - <em>('auto' or px amount)</em></td>
+    </tr>
+    <tr>
+      <td><strong>ellipsis</strong></td>
+      <td>true</td>
+      <td>Set to true to enable the ellipsis</td>
+    </tr>
+    <tr>
+      <td><strong>title</strong></td>
+      <td>false</td>
+      <td>Set to true to show the full data on hover</td>
+    </tr>
+    <tr>
+      <td><strong>afterShow</strong></td>
+      <td> $.noop</td>
+      <td>The callback fired after the show/reveal</td>
+    </tr>
+    <tr>
+      <td><strong>afterHide</strong></td>
+      <td>$.noop</td>
+      <td>The callback fired after the hide/conceal</td>
+    </tr>
+    <tr>
+      <td><strong>Sou foda</strong></td>
+      <td>$.noop</td>
+      <td>The callback fired after the hide/conceal</td>
+    </tr>
+  </tbody>
+</table>
+  <div class="col-xs-6">
+<!-- Link responsável por levar ao cadastro -->
+        <a href="cadastro_tabela.html" class="btn btn-primary" id="register-form-link">Adicionar item</a>
+  </div>
 </div>
+<br>
 <!-- Scripts do Bootstrap usados aqui -->
  <script src="js/jquery.min.js"></script>
  <script src="js/bootstrap.min.js"></script>
