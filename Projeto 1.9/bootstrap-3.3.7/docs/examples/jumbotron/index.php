@@ -78,7 +78,7 @@
         </div>
         <div class="col-md-4">
           <h2>Noticias</h2>
-          <p> </p>
+          <p></p>
           <p><a class="btn btn-default" href="#" role="button">Ver detalhes &raquo;</a></p>
        </div>
        
