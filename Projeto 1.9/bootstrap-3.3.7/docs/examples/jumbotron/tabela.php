@@ -49,7 +49,7 @@
       echo "<th>Nome</th>";
       echo "<th>Quantidade</th>";
       echo "</tr>";
-      // echo "</thead>";
+      echo "</thead>";
   while ($dados = $buscarDados->fetch(PDO::FETCH_ASSOC)) {
 //Aqui está os echo's responsaveis por mostrar os dados ao usuário
   echo "<tbody>";
@@ -58,6 +58,7 @@
       echo "<td><strong>".$dados['nome']."</strong></td>";
       echo "<td>".$dados['quantidade']."</td>";
    echo "</tr>";
+    }
     ?>
   </tbody>
 </table>
