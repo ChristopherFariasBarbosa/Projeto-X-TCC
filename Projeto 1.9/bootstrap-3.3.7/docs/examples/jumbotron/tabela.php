@@ -43,21 +43,67 @@
   <thead>
     <?php
   include('database.php');
-  $buscarDados = $pdo -> query("SELECT * FROM itens");
+  $pegarDados = $pdo -> query("SELECT * FROM itens");
       echo "<tr>";
       echo "<th>Id</th>";
       echo "<th>Nome</th>";
       echo "<th>Quantidade</th>";
       echo "</tr>";
-      // echo "</thead>";
-  while ($dados = $buscarDados->fetch(PDO::FETCH_ASSOC)) {
+      echo "</thead>";
+      echo "<tbody>";
+  while ($dados = $pegarDados->fetch(PDO::FETCH_ASSOC)) {
 //Aqui está os echo's responsaveis por mostrar os dados ao usuário
-  echo "<tbody>";
     echo "<tr>";
-      echo "<td>".$dados['id_item']."</td>";
-      echo "<td><strong>".$dados['nome']."</strong></td>";
-      echo "<td>".$dados['quantidade']."</td>";
+      echo "<td><strong>Impressora</strong></td>";
+      echo "<td>15</td>";
+      echo "<td>The speed of the show/reveal</td>";
    echo "</tr>";
+    echo "<tr>";
+      echo "<td><strong>Teclado</strong></td>";
+      echo "<td>linear</td>";
+      echo "<td>The easing of the show/reveal</td>";
+   echo "</tr>";
+   echo "<tr>";
+      echo "<td><strong>Mouse</strong></td>";
+      echo "<td>50</td>";
+      echo "<td>The speed of the hide/conceal</td>";
+    echo "</tr>";
+    echo "<tr>";
+      echo "<td><strong>Monitor LCD</strong></td>";
+      echo "<td>linear</td>";
+      echo "<td>The easing of the hide/conceal</td>";
+    echo "</tr>";         
+    echo "<tr>";
+    echo "  <td><strong>Monitor CRT</strong></td>";
+      echo "<td>auto</td>";
+      echo "<td>The width that the data will be truncated to - <em>('auto' or px amount)</em></td>";
+    echo "</tr>";
+    echo "<tr>";
+      echo "<td><strong>ellipsis</strong></td>";
+      echo "<td>true</td>";
+      echo "<td>Set to true to enable the ellipsis</td>";
+    echo "</tr>";
+   echo " <tr>";
+    echo "  <td><strong>title</strong></td>";
+      echo "<td>false</td>";
+     echo " <td>Set to true to show the full data on hover</td>";
+    echo "</tr>";
+    echo "<tr>";
+      echo "<td><strong>afterShow</strong></td>";
+      echo "<td> $.noop</td>";
+      echo "<td>The callback fired after the show/reveal</td>";
+    echo "</tr>";
+    echo "<tr>";
+      echo "<td><strong>afterHide</strong></td>";
+      echo "<td>$.noop</td>";
+      echo "<td>The callback fired after the hide/conceal</td>";
+    echo "</tr>";
+    echo "<tr>";
+      echo "<td><strong>Sou foda</strong></td>";
+      echo "<td>$.noop</td>";
+      echo "<td>The callback fired after the hide/conceal</td>";
+    echo "</tr>";
+    }
     ?>
   </tbody>
 </table>
