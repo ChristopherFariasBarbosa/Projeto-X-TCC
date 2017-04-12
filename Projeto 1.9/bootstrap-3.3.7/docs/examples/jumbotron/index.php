@@ -52,7 +52,7 @@
   <div id="navbar" class="navbar-collapse collapse">
    <ul class="nav navbar-nav navbar-right">
     <li><a href="#">Início</a></li>
-    <li><a href="buscar.php">Buscar</a></li>
+    <li><a href="buscar.php">Usuários</a></li>
     <li><a href="option.php">Opções</a></li>
     <li><a href="perfil.php">Perfil</a></li>
     <li><a href="ajuda.php">Ajuda</a></li>
