@@ -9,8 +9,9 @@
  <!-- Link com todos os CSS relacionados a está página -->
  <link href="css/bootstrap.min.css" rel="stylesheet">
  <link href="css/style.css" rel="stylesheet">
- <link rel="stylesheet" type="text/css" href="estilo_buscar.css">
+ <link rel="stylesheet" type="text/css" href="estilo_tabela.css">
  <link rel="stylesheet" type="text/css" href="estilo.css">
+
 </head>
 <body> 
  <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -28,6 +29,7 @@
   <div id="navbar" class="navbar-collapse collapse">
    <ul class="nav navbar-nav navbar-right">
     <li><a href="index.php">Início</a></li>
+    <li><a href="buscar.php">Usuários</a></li>
     <li><a href="option.php">Opções</a></li>
     <li><a href="perfil.php">Perfil</a></li>
     <li><a href="ajuda.php">Ajuda</a></li>
@@ -38,7 +40,35 @@
 <hr>
 <div id="main" class="container-fluid">
 <br><br>
-
+<table>
+  <thead>
+    <?php
+  include('database.php');
+  $buscarDados = $pdo -> query("SELECT * FROM itens");
+      echo "<tr>";
+      echo "<th>Id</th>";
+      echo "<th>Nome</th>";
+      echo "<th>Quantidade</th>";
+      echo "</tr>";
+      echo "</thead>";
+      echo "<tbody>";
+  while ($dados = $buscarDados->fetch(PDO::FETCH_ASSOC)) {
+//Aqui está os echo's responsaveis por mostrar os dados ao usuário
+      echo "<tr>";
+      echo "<td>".$dados['id_item']."</td>";
+      echo "<td><strong>".$dados['nome']."</strong></td>";
+      echo "<td>".$dados['quantidade']."</td>";
+      echo "</tr>";
+    }
+    ?>
+  </tbody>
+</table>
+  <div class="col-xs-6">
+<!-- Link responsável por levar ao cadastro -->
+        <a href="cadastro_tabela.html" class="btn btn-primary" id="register-form-link">Adicionar item</a>
+  </div>
+</div>
+<br>
 <!-- Scripts do Bootstrap usados aqui -->
  <script src="js/jquery.min.js"></script>
  <script src="js/bootstrap.min.js"></script>

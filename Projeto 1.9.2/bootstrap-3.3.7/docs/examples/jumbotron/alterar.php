@@ -25,10 +25,11 @@
   </div>
   <div id="navbar" class="navbar-collapse collapse">
    <ul class="nav navbar-nav navbar-right">
-    <li><a href="#">Início</a></li>
-    <li><a href="#">Opções</a></li>
-    <li><a href="#">Perfil</a></li>
-    <li><a href="#">Ajuda</a></li>
+    <li><a href="index.php">Início</a></li>
+    <li><a href="buscar.php">Usuários</a></li>
+    <li><a href="option.php">Opções</a></li>
+    <li><a href="perfil.php">Perfil</a></li>
+    <li><a href="ajuda.php">Ajuda</a></li>
    </ul>
   </div>
  </div>
@@ -38,7 +39,7 @@
 <br><br>
  <form action="editar_go.php" method="POST">
 <?php
-	$id = $_GET['id_user'];
+  $id = $_GET['id_user'];
   include("database.php");
   $mostrarDados = $pdo->query("SELECT * FROM usuarios WHERE id_user = $id");
   $dados = $mostrarDados->fetch(PDO::FETCH_ASSOC);

@@ -27,10 +27,11 @@
   </div>
   <div id="navbar" class="navbar-collapse collapse">
    <ul class="nav navbar-nav navbar-right">
-    <li><a href="#">Início</a></li>
-    <li><a href="#">Opções</a></li>
-    <li><a href="#">Perfil</a></li>
-    <li><a href="#">Ajuda</a></li>
+    <li><a href="index.php">Início</a></li>
+    <li><a href="#">Usuários</a></li>
+    <li><a href="option.php">Opções</a></li>
+    <li><a href="perfil.php">Perfil</a></li>
+    <li><a href="ajuda.php">Ajuda</a></li>
    </ul>
   </div>
  </div>
@@ -40,31 +41,31 @@
 <br><br>
  <form action="editar_go.php" method="POST">
 <?php
-	include('database.php');
-	$buscarDados = $pdo -> query("SELECT * FROM usuarios");
-	while ($dados = $buscarDados->fetch(PDO::FETCH_ASSOC)) {
+  include('database.php');
+  $buscarDados = $pdo -> query("SELECT * FROM usuarios");
+  while ($dados = $buscarDados->fetch(PDO::FETCH_ASSOC)) {
 //Aqui está os echo's responsaveis por mostrar os dados ao usuário
     echo "<table border='0px'>";
     echo "<tr>";
-		echo "<td class='itens'>ID: ".$dados['id_user']."</td>";
-		echo "<td class='itens'>Nome: ".$dados['nome']."</td>";
+    echo "<td class='itens'>ID: ".$dados['id_user']."</td>";
+    echo "<td class='itens'>Nome: ".$dados['nome']."</td>";
     echo "</tr>";
     echo "<tr>";
-		echo "<td class='itens'>Email: ".$dados['email']."</td>";
-		echo "<td class='itens'>Senha: ".$dados['senha']."</td>";
+    echo "<td class='itens'>Email: ".$dados['email']."</td>";
+    echo "<td class='itens'>Senha: ".$dados['senha']."</td>";
     echo "</tr>";
     echo "<tr>";
-		echo "<td class='itens'>Cargo: ".$dados['cargo']."</td>";
-		echo "<td class='itens'>Setor: ".$dados['setor']."</td>";
+    echo "<td class='itens'>Cargo: ".$dados['cargo']."</td>";
+    echo "<td class='itens'>Setor: ".$dados['setor']."</td>";
     echo "</tr>";
     echo "<tr>";
-		echo "<td class='itens'>RG: ".$dados['rg']."</td>";
+    echo "<td class='itens'>RG: ".$dados['rg']."</td>";
     echo "</tr>";
     echo "</table>";
 //Aqui está os botões responsaveis por levar os dados as páginas de deletar ou alterar informções dos usuários
-		echo "<br><a href='deletar.php?id_user=".$dados['id_user']."' class='btn btn-primary'>Deletar</a> <a href='alterar.php?id_user=".$dados['id_user']."'  class='btn btn-primary'>Alterar</a>";
-		echo "<hr>";
-	}
+    echo "<br><a href='deletar.php?id_user=".$dados['id_user']."' class='btn btn-primary'>Deletar</a> <a href='alterar.php?id_user=".$dados['id_user']."'  class='btn btn-primary'>Alterar</a>";
+    echo "<hr>";
+  }
 
 ?>
 </form>
