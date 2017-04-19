@@ -34,6 +34,19 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <?php
+    session_start();
+    if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))) {
+      header("location: login.html");
+    }
+     include('database.php');
+     $login = $_SESSION['email'];
+
+     $consulta = $pdo -> query("SELECT nome FROM usuarios WHERE email = '$email'");
+      $dado = $consulta -> fetch(PDO::FETCH_ASSOC);
+
+    echo "Bem vindo(a) ".$dado['nome']."<br>";
+?>
   </head>
 
   <body>
@@ -56,6 +69,7 @@
     <li><a href="option.php">Opções</a></li>
     <li><a href="perfil.php">Perfil</a></li>
     <li><a href="ajuda.php">Ajuda</a></li>
+    <li><a href="sair.php">Sair</a></li>
    </ul>
   </div>
  </div>
