@@ -17,6 +17,12 @@
 
 
  </script>
+ <?php
+    session_start();
+    if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))) {
+      header("location: login.html");
+    }
+  ?>
 </head>
 <body> 
  <nav class="navbar navbar-inverse navbar-fixed-top">

@@ -43,6 +43,10 @@
 <table>
   <thead>
     <?php
+    session_start();
+    if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))) {
+      header("location: login.html");
+    }
   include('database.php');
   $buscarDados = $pdo -> query("SELECT * FROM itens");
       echo "<tr>";
@@ -65,7 +69,7 @@
 </table>
   <div class="col-xs-6">
 <!-- Link responsável por levar ao cadastro -->
-        <a href="cadastro_tabela.html" class="btn btn-primary" id="register-form-link">Adicionar item</a>
+        <a href="cadastro_tabela.php" class="btn btn-primary" id="register-form-link">Adicionar item</a>
   </div>
 </div>
 <br>

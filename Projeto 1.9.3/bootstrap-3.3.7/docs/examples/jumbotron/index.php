@@ -44,8 +44,6 @@
 
      $consulta = $pdo -> query("SELECT nome FROM usuarios WHERE email = '$email'");
       $dado = $consulta -> fetch(PDO::FETCH_ASSOC);
-
-    echo "Bem vindo(a) ".$dado['nome']."<br>";
 ?>
   </head>
 
@@ -59,7 +57,7 @@
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
    </button>
-   <a class="navbar-brand" href="#">Usuário X bem vindo(a) à Projeto X </a>
+   <a class="navbar-brand" href="#"> <?php echo "Bem vindo(a) ".$dado['nome']."<br>"?>  </a>
           <img src="user.png" class="icone">
   </div>
   <div id="navbar" class="navbar-collapse collapse">

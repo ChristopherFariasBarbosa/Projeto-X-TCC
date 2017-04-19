@@ -41,6 +41,10 @@
 <br><br>
  <form action="editar_go.php" method="POST">
 <?php
+    session_start();
+    if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))) {
+      header("location: login.html");
+    }
   include('database.php');
   $buscarDados = $pdo -> query("SELECT * FROM usuarios");
   while ($dados = $buscarDados->fetch(PDO::FETCH_ASSOC)) {
