@@ -40,7 +40,7 @@
       header("location: login.html");
     }
      include('database.php');
-     $login = $_SESSION['email'];
+     $email = $_SESSION['email'];
 
      $consulta = $pdo -> query("SELECT nome FROM usuarios WHERE email = '$email'");
       $dado = $consulta -> fetch(PDO::FETCH_ASSOC);
