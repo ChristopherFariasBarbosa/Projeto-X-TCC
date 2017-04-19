@@ -62,6 +62,7 @@
     <li><a href="#">Opções</a></li>
     <li><a href="perfil.php">Perfil</a></li>
     <li><a href="ajuda.php">Ajuda</a></li>
+    <li><a href="sair.php">Sair</a></li>
    </ul>
   </div>
  </div>
