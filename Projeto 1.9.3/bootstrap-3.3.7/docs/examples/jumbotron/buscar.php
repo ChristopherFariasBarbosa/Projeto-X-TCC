@@ -34,7 +34,7 @@
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
    </button>
-   <a class="navbar-brand" href="#">Projeto X - <?php echo "Bem vindo(a) ".$dado['nome']."<br>" ?> - Buscar usuários</a>
+   <a class="navbar-brand" href="#">Projeto X - <?php echo "Bem vindo(a) ".$dado['nome']; ?> - Buscar usuários</a>
    <img src="eye.png" class="icone">
   </div>
   <div id="navbar" class="navbar-collapse collapse">

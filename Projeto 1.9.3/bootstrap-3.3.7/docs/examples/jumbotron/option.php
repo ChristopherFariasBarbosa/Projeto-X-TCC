@@ -58,7 +58,7 @@
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
    </button>
-   <a class="navbar-brand" href="#"><?php echo "Bem vindo(a) ".$dado['nome']."<br>"?> - Opições Projeto X </a>
+   <a class="navbar-brand" href="#"><?php echo "Bem vindo(a) ".$dado['nome'];?> - Opições Projeto X </a>
           <img src="user.png" class="icone">
   </div>
   <div id="navbar" class="navbar-collapse collapse">
