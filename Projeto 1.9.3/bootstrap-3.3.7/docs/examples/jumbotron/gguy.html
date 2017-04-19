@@ -1,0 +1,82 @@
+/*
+$buscarDados->bind_param(1, $_POST['usuario'],PDO::PARAM_STR); 
+$buscarDados->bind_param(2, $_POST['senha'], PDO::PARAM_STR); 
+
+// Executando statement 
+$buscarDados->execute(); 
+
+// Obter linha consultada 
+$obj = $buscarDados->fetchObject(); 
+*/
+// Se a linha existe: indicar que esta logado e encaminhar para outro lugar 
+/*
+if ($obj) { 
+$_SESSION['email'] = $_POST['email']; 
+header('Location:index.php'); 
+} else { 
+echo '<p class="erro">Login/Senha inv&aacute;lidos</p>'; 
+} 
+*/
+<!-- ?<php
+	include('database.php');
+	$buscarDados = $pdo -> query("SELECT * FROM usuarios");
+echo  "<a href='deletar.php?id_user=".$dados['id_user']."'><input type='button' value='Sim' name='sim'></a>";
+echo  "<a href='buscar.php'><input type='button' value='Não' name='nao' ></a>";
+?> */
+</center>
+</body>
+</html>
+-->
+<!-- 
+<?php
+	include('database.php');
+	$buscarDados = $pdo -> query("SELECT * FROM usuarios");
+	while ($dados = $buscarDados->fetch(PDO::FETCH_ASSOC)) {
+		echo "id: ".$dados['id_user']."<br>";
+		echo "Nome: ".$dados['nome']."<br>";
+		echo "Email: ".$dados['email']."<br>";
+		echo "Senha: ".$dados['senha']."<br>";
+		echo "Cargo: ".$dados['cargo']."<br>";
+		echo "Setor: ".$dados['setor']."<br>";
+		echo "RG: ".$dados['rg'];
+		echo "<br><a href='deletar.php?id_user=".$dados['id_user']."'>Deletar</a> - <a href='alterar.php?id_user=".$dados['id_user']."'>Alterar</a>";
+		echo "<br>---------------------------------------<br>";
+	}
+
+?>
+
+
+<?php
+	include("database.php");
+	$id = $_POST['id_user'];
+	$nome = $_POST['nome'];
+	$email = $_POST['email'];
+	$senha = $_POST['senha'];
+	$cargo = $_POST['cargo'];
+	$setor = $_POST['setor'];
+	$rg = $_POST['rg'];
+
+	$editarDados = $pdo -> query("UPDATE usuarios SET nome='".$nome."', email='".$email."', senha='".$senha."' cargo='".$cargo."', setor='".$setor."', rg='".$rg."' WHERE id_user ='".$id."' ");
+	header('Location:buscar.php');
+?>
+
+
+
+<?php
+	include('database.php');
+	$buscarDados = $pdo -> query("SELECT * FROM usuarios");
+	while ($dados = $buscarDados->fetch(PDO::FETCH_ASSOC)) {
+		echo "id: ".$dados['id_user']."<br>";
+		echo "Nome: ".$dados['nome']."<br>";
+		echo "Email: ".$dados['email']."<br>";
+		echo "Senha: ".$dados['senha']."<br>";
+		echo "Cargo: ".$dados['cargo']."<br>";
+		echo "Setor: ".$dados['setor']."<br>";
+		echo "RG: ".$dados['rg'];
+		echo "<br><a href='deletar.php?id_user=".$dados['id_user']."'>Deletar</a> - <a href='alterar.php?id_user=".$dados['id_user']."'>Alterar</a>";
+		echo "<br>---------------------------------------<br>";
+	}
+
+?>
+
+-->
