@@ -55,10 +55,6 @@
 <table>
   <thead>
     <?php
-    session_start();
-    if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))) {
-      header("location: login.html");
-    }
   include('database.php');
   $buscarDados = $pdo -> query("SELECT * FROM itens");
       echo "<tr>";
