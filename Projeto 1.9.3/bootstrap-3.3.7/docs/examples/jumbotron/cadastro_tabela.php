@@ -41,8 +41,6 @@
     <span class="icon-bar"></span>
    </button>
    <a class="navbar-brand" href="#">Projeto X - <?php echo "Bem vindo(a) ".$dado['nome'];?> - Cadastrar tabelas </a><img src="edit-document.png" class="icone">
-   <a class="navbar-brand" href="#">Cadastro</a>
-   <img src="edit-document.png" class="icone">
   </div>
   <div id="navbar" class="navbar-collapse collapse">
    <ul class="nav navbar-nav navbar-right">
