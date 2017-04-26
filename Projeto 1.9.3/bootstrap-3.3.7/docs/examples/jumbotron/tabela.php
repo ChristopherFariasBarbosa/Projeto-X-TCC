@@ -58,18 +58,18 @@
   include('database.php');
   $buscarDados = $pdo -> query("SELECT * FROM itens");
       echo "<tr>";
-      echo "<th>Id</th>";
-      echo "<th>Nome</th>";
-      echo "<th>Quantidade</th>";
+      echo "<th>Categoria</th>";
+      echo "<th>Modelo</th>";
+      echo "<th>Descrição</th>";
       echo "</tr>";
       echo "</thead>";
       echo "<tbody>";
   while ($dados = $buscarDados->fetch(PDO::FETCH_ASSOC)) {
 //Aqui está os echo's responsaveis por mostrar os dados ao usuário
       echo "<tr>";
-      echo "<td>".$dados['id_item']."</td>";
-      echo "<td><strong>".$dados['nome']."</strong></td>";
-      echo "<td>".$dados['quantidade']."</td>";
+      echo "<td><strong>".$dados['categoria']."</strong></td>";
+      echo "<td>".$dados['modelo']."</td>";
+      echo "<td>".$dados['descricao']."</td>";
       echo "</tr>";
     }
     ?>

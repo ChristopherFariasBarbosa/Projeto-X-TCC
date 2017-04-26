@@ -60,13 +60,45 @@
  <form action="inserir_tabela.php" method="POST">
   <!-- Area de campos do form -->
   <div class="row">
-   <div class="form-group col-md-8">
-     <label for="nome">Nome Completo</label>
-     <input type="text" class="form-control" required maxlength="90" name="nome" placeholder="Digite o nome do item">
+  <div class="form-group col-md-4">
+     <label for="categoria">Categoria</label>
+     <select class="form-control" required name="categoria">
+      <option value="Cabo">Cabo</option>
+      <option value="Caixa de Som">Caixa de Som</option>
+      <option value="Celular">Celular</option>
+      <option value="Diversos Eletrônicos">Divérsos Eletrônicos</option>
+      <option value="Diversos Plásticos">Divérsos Plásticos</option>
+      <option value="Drive CD">Drive CD</option>       
+      <option value="Drive DVD">Drive DVD</option>
+      <option value="Estabilizador">Estabilizador</option>
+      <option value="Fio">Fio</option>
+      <option value="Fonte">Fonte</option>
+      <option value="Gabinete Completo">Gabinete Completo</option>
+      <option value="Gabinete Incompleto">Gabinete Incompleto</option>
+      <option value="Gabinete Vazio">Gabinete Vazio</option>
+      <option value="HD">HD</option>
+      <option value="Impressora">Impressora</option>
+      <option value="Monitor CRT">Monitor CRT</option>
+      <option value="Monitor LCD">Monitor LCD</option>
+      <option value="Mouse">Mouse</option>
+      <option value="Nobreak">Nobreak</option>
+      <option value="Notebook">Notebook</option>
+      <option value="Placas Coloridas">Placas coloridas</option>
+      <option value="Servidor">Servidor</option>
+      <option value="Switch">Switch</option>
+      <option value="Teclado">Teclado</option>
+      <option value="TV">TV</option>
+     </select>
+     <!-- <input type="select" class="form-control" required maxlength="90" name="categoria" placeholder="Digite o nome do item">
+      -->
+   </div>
+   <div class="form-group col-md-4">
+     <label for="modelo">Modelo</label>
+     <input type="text" class="form-control" required maxlength="100" name="modelo" placeholder="Digite o modelo do item">
    </div>
       <div class="form-group col-md-4">
-     <label for="quantidade">Quantidade</label>
-     <input type="number" class="form-control" required maxlength="10" name="quantidade" placeholder="Digite a quantidade">
+     <label for="descricao">Descrição</label>
+     <input type="text" class="form-control" required name="descricao" maxlength="300" placeholder="Digite a descricao">
    </div>
   </div>
  </div>
