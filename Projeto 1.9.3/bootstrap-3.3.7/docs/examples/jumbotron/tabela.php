@@ -61,7 +61,8 @@
       echo "<th>Categoria</th>";
       echo "<th>Modelo</th>";
       echo "<th>Descrição</th>";
-      echo "<th>Editar/Deletar</th>";
+      echo "<th>Editar</th>";
+      echo "<th>Deletar</th>"
       echo "</tr>";
       echo "</thead>";
       echo "<tbody>";
@@ -71,8 +72,8 @@
       echo "<td><strong>".$dados['categoria']."</strong></td>";
       echo "<td>".$dados['modelo']."</td>";
       echo "<td>".$dados['descricao']."</td>";
-      echo "<td>"."<a href='' class='btn btn-primary' id='register-form-link>Alterar</a>'";
-      echo "<a href='' class='btn btn-primary' id='register-form-link>Deletar</a>'"."</td>";
+      echo "<td>"."<a href='' class='btn btn-primary' id='register-form-link>Alterar</a>'"."</td>";
+      echo "<td>"."<a href='' class='btn btn-primary' id='register-form-link>Deletar</a>'"."</td>";
       echo "</tr>";
     }
     ?>
