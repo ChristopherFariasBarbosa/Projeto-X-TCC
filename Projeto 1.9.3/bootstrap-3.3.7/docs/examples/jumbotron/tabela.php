@@ -62,7 +62,7 @@
       echo "<th>Modelo</th>";
       echo "<th>Descrição</th>";
       echo "<th>Editar</th>";
-      echo "<th>Deletar</th>"
+      echo "<th>Deletar</th>";
       echo "</tr>";
       echo "</thead>";
       echo "<tbody>";
