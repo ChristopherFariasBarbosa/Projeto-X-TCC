@@ -72,8 +72,8 @@
       echo "<td><strong>".$dados['categoria']."</strong></td>";
       echo "<td>".$dados['modelo']."</td>";
       echo "<td>".$dados['descricao']."</td>";
-      echo "<td>"."<a href='alterar.php?id_user=".$dados['id_user']."' class='btn btn-warning'>Alterar</a>"."</td>";
-      echo "<td>"."<a href='deletar.php?id_item=".$dados['id_item']."' class='btn btn-danger'>Deletar</a>"."</td>";
+      echo "<td>"."<a href='alterar_tabela.php?id_item=".$dados['id_item']."' class='btn btn-warning'>Alterar</a>"."</td>";
+      echo "<td>"."<a href='deletar_tabela.php?id_item=".$dados['id_item']."' class='btn btn-danger'>Deletar</a>"."</td>";
       echo "</tr>";
     }
     ?>
