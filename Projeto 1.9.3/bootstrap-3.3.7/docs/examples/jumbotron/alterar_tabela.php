@@ -59,9 +59,9 @@
 <br><br>
  <form action="inserir_tabela.php" method="POST">
 <?php
-  $id = $_GET['id_user'];
+  $id = $_GET['id_item'];
   include("database.php");
-  $mostrarDados = $pdo->query("SELECT * FROM usuarios WHERE id_user = $id");
+  $mostrarDados = $pdo->query("SELECT * FROM itens WHERE id_item = $id");
   $dados = $mostrarDados->fetch(PDO::FETCH_ASSOC); 
    //Area de campos do form
    echo "<div class='row'>";
