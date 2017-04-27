@@ -57,7 +57,7 @@
 <hr>
 <div id="main" class="container-fluid">
 <br><br>
- <form action="inserir_tabela.php" method="POST">
+ <form action="editar_tabela.php" method="POST">
 <?php
   $id = $_GET['id_item'];
   include("database.php");
@@ -78,16 +78,6 @@
    ?>
   </div>
  </div>
- <hr>
-<!-- Botões de enviar ou cancelar -->
- <div id="actions" class="row">
-    <div class="col-md-9">
-    </div>
-    <div class="col-md-3">
-      <input type="submit" class="btn btn-primary" value="Enviar" onClick="sucesso();">
-      <a href="tabela.php" class="btn btn-default">Cancelar</a>
-    </div>
-  </div></form>
 <!-- Scripts do Bootstrap usados aqui -->
  <script src="js/jquery.min.js"></script>
  <script src="js/bootstrap.min.js"></script>
