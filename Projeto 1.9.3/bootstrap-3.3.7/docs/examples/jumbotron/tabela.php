@@ -9,7 +9,6 @@
  <!-- Link com todos os CSS relacionados a está página -->
  <link href="css/bootstrap.min.css" rel="stylesheet">
  <link href="css/style.css" rel="stylesheet">
- <link rel="stylesheet" type="text/css" href="estilo_tabela.css">
  <link rel="stylesheet" type="text/css" href="estilo.css">
  <?php
     session_start();
@@ -52,11 +51,10 @@
 <hr>
 <div id="main" class="container-fluid">
 <br><br>
-<table>
+<table id="id_item">
   <thead>
     <?php
-  include('database.php');
-  $buscarDados = $pdo -> query("SELECT * FROM itens");
+    $buscarDados = $pdo -> query("SELECT * FROM itens");
       echo "<tr>";
       echo "<th>Categoria</th>";
       echo "<th>Modelo</th>";
@@ -86,7 +84,23 @@
 </div>
 <br>
 <!-- Scripts do Bootstrap usados aqui -->
- <script src="js/jquery.min.js"></script>
- <script src="js/bootstrap.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+      <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/dataTables.bootstrap.min.css">
+      <script>
+      $(document).ready(function(){
+        $('#id_item').DataTable({
+          "language": {
+                "lengthMenu": "Mostrando _MENU_ registros por página",
+                "zeroRecords": "Nada encontrado",
+                "info": "Mostrando página _PAGE_ de _PAGES_",
+                "infoEmpty": "Nenhum registro disponível",
+                "infoFiltered": "(filtrado de _MAX_ registros no total)"
+            }
+        });
+    });
+      </script>
 </body>
 </html>

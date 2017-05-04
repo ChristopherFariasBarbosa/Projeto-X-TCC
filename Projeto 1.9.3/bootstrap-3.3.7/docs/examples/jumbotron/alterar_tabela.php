@@ -65,12 +65,14 @@
   $dados = $mostrarDados->fetch(PDO::FETCH_ASSOC); 
    //Area de campos do form
    echo "<div class='row'>";
-    echo "<div class='form-group col-md-6'>";
+    echo "<div class='form-group col-md-5'>";
      echo "<label for='modelo'>Modelo</label>";
      echo "<input type='text' class='form-control' maxlength='100' name='modelo' value='".$dados['modelo']."'>";
-      echo "<div class='form-group col-md-6'>";
+      echo "</div>";
+      echo "<div class='form-group col-md-7'>";
      echo "<label for='descricao'>Descrição</label>";
      echo "<input type='text' class='form-control' maxlength='300' name='descricao' value='".$dados['descricao']."'>";
+   echo "</div>";
    echo "</div>";
    echo "<input type='hidden' name='id_item' value='".$dados['id_item']."'><br>";
     echo "<input type='submit' class='btn btn-primary' value='Alterar'> ";
