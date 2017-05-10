@@ -10,7 +10,7 @@
     <link rel="icon" href="logo.png">
     <link rel="stylesheet" type="text/css" href="estilo.css">
     
-    <title>Index</title>
+    <title>Início - Org.Itens</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -64,7 +64,6 @@
    <ul class="nav navbar-nav navbar-right">
     <li><a href="#">Início</a></li>
     <li><a href="buscar.php">Usuários</a></li>
-    <li><a href="option.php">Opções</a></li>
     <li><a href="perfil.php">Perfil</a></li>
     <li><a href="ajuda.php">Ajuda</a></li>
     <li><a href="sair.php">Sair</a></li>
@@ -85,9 +84,19 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">Ver detalhes &raquo;</a></p>
+          <h2>Itens disponiveis na alquimia</h2>
+          <p>Veja nessa tabela onde a filtros por Categoria, Modelo e Descrição, também procure por palvras-chave na barra de pesquisa</p>
+          <p><a class="btn btn-default" href="tabela.php" role="button">Ir Para Tabela &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Itens disponiveis no depósito A</h2>
+          <p>Veja nessa tabela onde a filtros por Categoria, Modelo e Descrição, também procure por palvras-chave na barra de pesquisa</p>
+          <p><a class="btn btn-default" href="tabela_a.php" role="button">Ir Para Tabela &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Itens disponiveis no depósito B</h2>
+          <p>Veja nessa tabela onde a filtros por Categoria, Modelo e Descrição, também procure por palvras-chave na barra de pesquisa</p>
+          <p><a class="btn btn-default" href="tabela_b.php" role="button">Ir Para Tabela &raquo;</a></p>
         </div>
         </div>
       </div>

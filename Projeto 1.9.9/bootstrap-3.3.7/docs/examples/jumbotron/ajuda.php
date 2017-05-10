@@ -10,7 +10,7 @@
     <link rel="icon" href="logo.png">
     <link rel="stylesheet" type="text/css" href="estilo.css">
     
-    <title>Index</title>
+    <title>Projeto X - Ajuda</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -39,12 +39,13 @@
     if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))) {
       header("location: login.html");
     }
-     include('database.php');
+    include('database.php');
      $email = $_SESSION['email'];
 
      $consulta = $pdo -> query("SELECT nome FROM usuarios WHERE email = '$email'");
       $dado = $consulta -> fetch(PDO::FETCH_ASSOC);
-?>
+
+  ?>
   </head>
 
   <body>
@@ -57,43 +58,33 @@
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
    </button>
-   <a class="navbar-brand" href="#">Início - <?php echo "Bem vindo(a) ".$dado['nome'];?>  </a>
+   <a class="navbar-brand" href="#"><?php echo "Bem vindo(a) ".$dado['nome'];?> - Ajuda</a>
           <img src="user.png" class="icone">
   </div>
   <div id="navbar" class="navbar-collapse collapse">
    <ul class="nav navbar-nav navbar-right">
-    <li><a href="#">Início</a></li>
+    <li><a href="index.php">Início</a></li>
     <li><a href="buscar.php">Usuários</a></li>
-    <li><a href="option.php">Opções</a></li>
     <li><a href="perfil.php">Perfil</a></li>
-    <li><a href="ajuda.php">Ajuda</a></li>
+    <li><a href="#">Ajuda</a></li>
     <li><a href="sair.php">Sair</a></li>
    </ul>
   </div>
  </div>
 </nav>
-
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Quer ver os itens que estão disponiveis nas tabelas</h1>
-        <p>Aqui você verá todos os itens cadastrados</p>
-        <p><a class="btn btn-primary btn-lg" href="tabela.php" role="button">Ler mais &raquo;</a></p>
+        <h1>Olá, precisa de ajuda?</h1>
+        <p>Aqui se encontra as informações de como usar o Projeto X</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Ler mais &raquo;</a></p>
       </div>
     </div>
-
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">Ver detalhes &raquo;</a></p>
-        </div>
+      <!-- Example row of columns -->
         </div>
       </div>
-
       <hr>
-
       <footer>
         <p>&copy; 2017 Company, Inc.</p>
       </footer>
