@@ -41,6 +41,7 @@
    <ul class="nav navbar-nav navbar-right">
     <li><a href="index.php">Início</a></li>
     <li><a href="#">Usuários</a></li>
+    <li><a href="historico.php">Histórico</a></li>
     <li><a href="perfil.php">Perfil</a></li>
     <li><a href="ajuda.php">Ajuda</a></li>
     <li><a href="sair.php">Sair</a></li>
@@ -76,7 +77,7 @@
     echo "</table>";
 //Aqui está os botões responsaveis por levar os dados as páginas de deletar ou alterar informções dos usuários
     echo "<br> <a href='deletar.php?id_user=".$dados['id_user']."' class='btn btn-primary'>Deletar</a> <a href='alterar.php?id_user=".$dados['id_user']."'  class='btn btn-primary'>Alterar</a>";
-    echo "<br><br><center><td><a href='cadastro.html' class='btn btn-primary'>Cadastrar</a> <a href='index.php' class='btn btn-default'>Voltar</a></td></center>";
+    echo "<br><br><center><td><a href='cadastro.php' class='btn btn-primary'>Cadastrar</a> <a href='index.php' class='btn btn-default'>Voltar</a></td></center>";
     echo "<hr>";
   }
 ?>

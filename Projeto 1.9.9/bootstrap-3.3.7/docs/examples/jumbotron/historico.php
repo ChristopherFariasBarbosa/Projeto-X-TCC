@@ -39,7 +39,7 @@
    <ul class="nav navbar-nav navbar-right">
     <li><a href="index.php">Início</a></li>
     <li><a href="buscar.php">Usuários</a></li>
-    <li><a href="historico.php">Histórico</a></li>
+    <li><a href="#">Histórico</a></li>
     <li><a href="perfil.php">Perfil</a></li>
     <li><a href="ajuda.php">Ajuda</a></li>
     <li><a href="sair.php">Sair</a></li>
@@ -53,40 +53,30 @@
 <table id="id_item">
   <thead>
     <?php
-    $buscarDados = $pdo -> query("SELECT * FROM itens");
+    $buscarDados = $pdo -> query("SELECT * FROM historico");
       echo "<tr>";
-      echo "<th>Categoria</th>";
+      echo "<th>Número do item</th>";
       echo "<th>Modelo</th>";
       echo "<th>Descrição</th>";
       echo "<th>Depósito</th>";
-      echo "<th>Editar</th>";
-      echo "<th>Deletar</th>";
+      echo "<th>Ação</th>";
       echo "</tr>";
       echo "</thead>";
       echo "<tbody>";
   while ($dados = $buscarDados->fetch(PDO::FETCH_ASSOC)) {
 //Aqui está os echo's responsaveis por mostrar os dados ao usuário
       echo "<tr>";
-      echo "<td><strong>".$dados['categoria']."</strong></td>";
+      echo "<td><strong>".$dados['id_item']."</strong></td>";
       echo "<td>".$dados['modelo']."</td>";
       echo "<td>".$dados['descricao']."</td>";
       echo "<td>".$dados['deposito']."</td>";
-      echo "<td>"."<a href='alterar_tabela.php?id_item=".$dados['id_item']."' class='btn btn-warning'>Alterar</a>"."</td>";
-      echo "<td>"."<a href='deletar_tabela.php?id_item=".$dados['id_item']."' class='btn btn-danger'>Deletar</a>"."</td>";
-      echo "</tr>";
+      echo "<td>".$dados['acao']."</td>";
     }
     ?>
   </tbody>
 </table>
   <div class="col-xs-6">
-<!-- Link responsável por levar ao cadastro -->
-<a class="btn btn-default" href="tabela_a.php" role="button">Ir Para Tabela do Depósito A &raquo;</a> 
-<a class="btn btn-default" href="tabela_b.php" role="button">Ir Para Tabela do Depósito B &raquo;</a>
-<br><br>
-        <center>
-        <a href="cadastro_tabela.php" class="btn btn-primary" id="register-form-link">Adicionar item</a>
         <a href="index.php" class="btn btn-default">Voltar</a>
-        </center>
   </div>
 </div>
 <br>

@@ -11,13 +11,13 @@ session_start();
   $num = $consulta -> rowCount();
 
   if ($num > 0) {
-	$_SESSION['email'] = $email;
-	$_SESSION['senha'] = $senha;
-	header("location: index.php");
-  	//echo "Logado! Bem Vindo(a) ".$login."<br>";
+  $_SESSION['email'] = $email;
+  $_SESSION['senha'] = $senha;
+  header("location: index.php");
+    //echo "Logado! Bem Vindo(a) ".$login."<br>";
   }
   else {
-  	echo "ERRO";
+    echo "ERRO";
   }
 ?>
 

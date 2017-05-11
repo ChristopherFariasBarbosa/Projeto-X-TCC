@@ -21,12 +21,24 @@
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
    </button>
+  <?php
+    session_start();
+    if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))) {
+      header("location: login.html");
+    }
+    include('database.php');
+     $email = $_SESSION['email'];
+
+     $consulta = $pdo -> query("SELECT nome FROM usuarios WHERE email = '$email'");
+      $dado = $consulta -> fetch(PDO::FETCH_ASSOC);
+  ?>
    <a class="navbar-brand" href="#">Projeto X - <?php echo "Bem vindo(a) ".$dado['nome'];?> - Alterar </a><img src="edit-document.png" class="icone">
   </div>
   <div id="navbar" class="navbar-collapse collapse">
    <ul class="nav navbar-nav navbar-right">
     <li><a href="index.php">Início</a></li>
     <li><a href="buscar.php">Usuários</a></li>
+    <li><a href="historico.php">Histórico</a></li>
     <li><a href="perfil.php">Perfil</a></li>
     <li><a href="ajuda.php">Ajuda</a></li>
     <li><a href="sair.php">Sair</a></li>

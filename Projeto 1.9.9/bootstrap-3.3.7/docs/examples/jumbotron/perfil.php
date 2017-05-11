@@ -20,9 +20,6 @@
 
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
     <style type="text/css">
       .icone {
@@ -65,6 +62,7 @@
    <ul class="nav navbar-nav navbar-right">
     <li><a href="index.php">Início</a></li>
     <li><a href="buscar.php">Usuários</a></li>
+    <li><a href="historico.php">Histórico</a></li>
     <li><a href="#">Perfil</a></li>
     <li><a href="ajuda.php">Ajuda</a></li>
     <li><a href="sair.php">Sair</a></li>
