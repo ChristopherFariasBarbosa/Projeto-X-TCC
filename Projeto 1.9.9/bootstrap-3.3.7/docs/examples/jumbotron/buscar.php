@@ -77,9 +77,9 @@
     echo "</table>";
 //Aqui está os botões responsaveis por levar os dados as páginas de deletar ou alterar informções dos usuários
     echo "<br> <a href='deletar.php?id_user=".$dados['id_user']."' class='btn btn-primary'>Deletar</a> <a href='alterar.php?id_user=".$dados['id_user']."'  class='btn btn-primary'>Alterar</a>";
-    echo "<br><br><center><td><a href='cadastro.php' class='btn btn-primary'>Cadastrar</a> <a href='index.php' class='btn btn-default'>Voltar</a></td></center>";
-    echo "<hr>";
   }
+    echo "<br><br><center><td><a href='cadastro.html' class='btn btn-primary'>Cadastrar</a> <a href='index.php' class='btn btn-default'>Voltar</a></td></center>";
+    echo "<hr>";
 ?>
 </form>
 <!-- Scripts do Bootstrap usados aqui -->

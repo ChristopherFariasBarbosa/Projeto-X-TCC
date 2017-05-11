@@ -39,6 +39,7 @@
    <ul class="nav navbar-nav navbar-right">
     <li><a href="index.php">Início</a></li>
     <li><a href="buscar.php">Usuários</a></li>
+    <li><a href="historico.php">Histórico</a></li>
     <li><a href="perfil.php">Perfil</a></li>
     <li><a href="ajuda.php">Ajuda</a></li>
     <li><a href="sair.php">Sair</a></li>

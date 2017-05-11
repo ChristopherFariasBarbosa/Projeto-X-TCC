@@ -18,6 +18,7 @@ session_start();
   }
   else {
     echo "ERRO";
+    header("location: login.html");
   }
 ?>
 
