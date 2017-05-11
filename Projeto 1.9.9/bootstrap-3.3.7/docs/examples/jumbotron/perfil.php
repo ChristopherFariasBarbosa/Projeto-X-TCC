@@ -10,7 +10,7 @@
     <link rel="icon" href="logo.png">
     <link rel="stylesheet" type="text/css" href="estilo.css">
     
-    <title>Projeto X - Perfil Usuário X</title>
+    <title>Gercitens - Perfil Usuário X</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -79,15 +79,16 @@
         <p><a class="btn btn-primary btn-lg" href="tabela.php" role="button">Ler mais &raquo;</a></p>
       </div>
     </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-
-
-      </div>
-
-      <hr>
+     <div class="container">
+      <?php
+      echo "<div class='row'>";
+      //Example row of columns
+      
+      echo "<p><h3>Quer mudar sua senha?ou Email? Clique no botão</h3></p><br>";
+      echo "<a href='alterar.php?id_user=".$dados['id_user']."'  class='btn btn-primary'>Alterar</a>";
+      echo "</div>";
+      echo "</div>";
+      ?>
 
       <footer>
         <p>&copy; 2017 Company, Inc.</p>
