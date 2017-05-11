@@ -60,6 +60,8 @@
       echo "<th>Descrição</th>";
       echo "<th>Depósito</th>";
       echo "<th>Ação</th>";
+      echo "<th>Data</th>";
+      echo "<th>Usuário</th>";
       echo "</tr>";
       echo "</thead>";
       echo "<tbody>";
@@ -71,6 +73,9 @@
       echo "<td>".$dados['descricao']."</td>";
       echo "<td>".$dados['deposito']."</td>";
       echo "<td>".$dados['acao']."</td>";
+      echo "<td>".$dados['data']."</td>";
+      echo "<td>".$dados['nome']."</td>";
+
     }
     ?>
   </tbody>

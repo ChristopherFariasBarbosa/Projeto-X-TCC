@@ -7,8 +7,9 @@
 	$deposito = $_POST['deposito'];
 	$acao = "Adicionou";
 	$usuario = $_POST['nome'];
+	$data = date('d/m/y');
 //Após a criação das variaveis irá inserir em tal ordem os dados das variaveis
-	$adicionarDados = $pdo->query("INSERT INTO historico(id_historico, id_item, modelo, descricao, categoria, deposito, acao, usuario) VALUES (null, '$id','$modelo','$descricao','$categoria','$deposito','$acao','$usuario')");
+	$adicionarDados = $pdo->query("INSERT INTO historico(id_historico, id_item, modelo, descricao, categoria, deposito, acao, data) VALUES (null, '$id','$modelo','$descricao','$categoria','$deposito','$acao','$data')");
 
 	$inserirDados = $pdo->query("INSERT INTO itens(id_item, modelo, descricao, categoria, deposito) VALUES (null,'$modelo','$descricao','$categoria','$deposito')");
 //Este header está responsavel para leva-lo devolta a página de cadastro 
