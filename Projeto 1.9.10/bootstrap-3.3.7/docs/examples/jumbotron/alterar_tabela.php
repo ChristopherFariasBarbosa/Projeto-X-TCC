@@ -4,7 +4,7 @@
  <meta charset="utf-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Cadastro</title>
+ <title>GercItens - Cadastro de Itens</title>
  <link rel="icon" href="logo.png">
 <!-- Link com todos os CSS relacionados a está página -->
  <link rel="stylesheet" type="text/css" href="estilo.css">

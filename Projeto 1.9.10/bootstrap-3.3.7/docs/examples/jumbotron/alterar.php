@@ -4,7 +4,7 @@
  <meta charset="utf-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Projeto X - Editar</title>
+ <title>GercItens - Editar</title>
  <link rel="icon" href="logo.png">
 <!-- Link com todos os CSS relacionados a está página -->
  <link href="css/bootstrap.min.css" rel="stylesheet">

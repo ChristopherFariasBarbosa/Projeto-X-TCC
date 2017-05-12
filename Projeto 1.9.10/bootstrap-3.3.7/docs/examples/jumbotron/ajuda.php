@@ -10,7 +10,7 @@
     <link rel="icon" href="logo.png">
     <link rel="stylesheet" type="text/css" href="estilo.css">
     
-    <title>Projeto X - Ajuda</title>
+    <title>GercItens - Ajuda</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
